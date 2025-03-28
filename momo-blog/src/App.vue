@@ -1,0 +1,17 @@
+<template>
+  <div data-theme="cupcake">
+    <NavBar />
+    <div class="shadow-md h-fit w-4/5 mx-auto">
+      <router-view />
+
+    </div>
+  </div>
+</template>
+
+<script setup>
+import NavBar from './components/NavBar.vue';
+</script>
+
+<style lang="scss" scoped>
+
+</style>
