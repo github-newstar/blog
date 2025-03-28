@@ -2,6 +2,7 @@
 import '../styles/global.css'
 import NavBar from '../components/NavBar.vue'
 import Footer from '../components/Footer.astro'
+import Profile from '../components/Profile.vue'
 
 const { pageTitle } = Astro.props
 ---
@@ -16,9 +17,12 @@ const { pageTitle } = Astro.props
 		<title>Momo Blog</title>
 	</head>
 	<body>
-		<NavBar />
-		<div class="shadow-md rounded-2xl m-5 h-[80vh] w-4/5 mx-auto">
+		
+			<NavBar />
 
+		
+		<div class="shadow-md rounded-2xl m-5 h-[80vh] w-[90%] mx-auto">
+			<Profile />
 			<slot />
 		</div>
 		<Footer />
@@ -27,4 +31,4 @@ const { pageTitle } = Astro.props
 
 <style>
 	
-</style>
+	</style>
