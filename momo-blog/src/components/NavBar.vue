@@ -27,13 +27,14 @@
           </ul>
         </div>
       </div>
+      <!-- 主题切换按钮 -->
       <label class="swap swap-rotate">
         <!-- this hidden checkbox controls the state -->
-        <input type="checkbox" />
+        <input type="checkbox" class="theme-controller" value="coffee" />
 
         <!-- sun icon -->
         <svg
-          class="swap-on h-8 w-8 fill-current"
+          class="swap-off h-10 w-10 fill-current"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
@@ -44,7 +45,7 @@
 
         <!-- moon icon -->
         <svg
-          class="swap-off h-8 w-8 fill-current"
+          class="swap-on h-10 w-10 fill-current"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
@@ -57,6 +58,15 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { usePageStateStore } from '@/stores/PageState'
+const stateStore = usePageStateStore()
+
+const toggleTheme = () => {
+  console.log('yeahe')
+
+  stateStore.theme = stateStore.theme === 'cupcake' ? 'coffee' : 'cupcake'
+}
+</script>
 
 <style lang="scss" scoped></style>
