@@ -1,9 +1,9 @@
 <template>
-    <nav class="fixed left-0 top-0 h-screen w-20 bg-[#2c3e50] flex flex-col items-center py-4">
+    <nav class=" h-fit max-w-[17rem] flex-1 bg-black flex flex-col items-center py-4">
         <!-- Profile Avatar -->
         <div class="mb-8">
             <img src="/assets/momo_head.jpg" alt="User Avatar"
-                class="w-16 h-16 rounded-full object-cover border-2 border-blue-400" />
+                class="w-45 h-45 rounded-full object-cover border-2 border-blue-400" />
         </div>
 
         <!-- Navigation Items -->
@@ -13,7 +13,7 @@
         </div>
 
         <!-- Bottom Icons -->
-        <div class="mt-auto mb-4 flex flex-col space-y-4">
+        <div class="my-4 flex space-y-4 gap-2 rounded-2xl px-4 pt-4 ">
             <BottomIcon icon="coffee" />
             <BottomIcon icon="github" />
             <BottomIcon icon="tv" />
