@@ -1,0 +1,10 @@
+---
+import Layout from "./Layout.astro";
+const { frontmatter } = Astro.props;
+---
+<Layout>
+    <h1>{frontmatter.title}</h1>
+    <p>作者：{frontmatter.author}</p>
+    <p>创建时间：{frontmatter.pubDate.toString().slice(0,10)}</p>
+    <slot />
+</Layout>  

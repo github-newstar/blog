@@ -1,3 +1,15 @@
+---
+layout: ../../layouts/MarkdownPostLayout.astro
+title: "容器化开发环境搭建"
+pubDate: 2025-03-28
+description: "这是一个一个一个容器化开发环境搭建教程！"
+author: "Momo"
+image:
+  url: "/assets/postImg/example_2.jpg"
+  alt: "img1"
+tags: ["astro", "blogging", "learning in public"]
+---
+
 # 介绍
 
     个人的开发环境是基于远程docker服务器（其实就是内网的一个windows docker desktop)和VsCode。做到了双重前后端分离：
@@ -67,7 +79,6 @@
 
     DS,启动！
      首先，打开windows docker desktop的这个选项：
-
 
 ![img](../pics/Pasted%20image%2020250327213917.png)
 
